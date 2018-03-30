@@ -34,6 +34,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<div class="wthree-pro">
 				<h2>Login Quick</h2>
 			</div>
+			
 			<form action="main" method="post">
 				<div class="pom-agile">
 					<input placeholder="Id" name="Name" class="user" type="text" required="">
@@ -50,6 +51,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					</div>
 				</div>
 			</form>
+			
 		</div>
 	</div>
 	<!--//main-->
