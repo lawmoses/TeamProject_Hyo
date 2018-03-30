@@ -14,20 +14,13 @@ public class MemberController{
 		return "index";
 	}
 	
-//장효추가
-	@RequestMapping("/sample")
-	public String sample(Model model) {
-		
-		return "board/sample";
-		//return "index";
-	}
+
 	
-//장효수정
-	/*@RequestMapping("/main")
+	@RequestMapping("/main")
 	public String Login(Model model) {
 		
 		return "board/mainBoard";
-	}*/
+	}
 	
 	
 	

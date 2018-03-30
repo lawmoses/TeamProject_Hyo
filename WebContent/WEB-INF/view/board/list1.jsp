@@ -56,13 +56,13 @@
 			<td width="250">
 	
 			<c:if test="${article.re_level>0}">
-				<img src="../images/level.gif"
+				<img src="${pageContext.request.contextPath}/resources/images/hyo-board-img/level.gif"
 					width="${5 * article.re_level}" height="16"> 
-				<img src="../images/re.gif">
+				<img src="resources/images/hyo-board-img/re.gif">
 			</c:if> 
 	
 			<c:if test="${article.re_level==0}">
-	 			<img src="../images/level.gif"  height="16">
+	 			<img src="${pageContext.request.contextPath}/resources/images/hyo-board-img/level.gif"  height="16">
 			</c:if>
 			
 <!-- ¼öÁ¤ : ${boardid } -->
@@ -70,7 +70,7 @@
 					${article.subject}</a> 
 
  			<c:if test="article.readcount>=20">
- 				<img src="../images/hot.gif" border="0" height="16">
+ 				<img src="resources/images/hyo-board-img/hot.gif" border="0" height="16">
 			</c:if>
  			</td>
 			<td align="center" width="100">${article.writer}</td>

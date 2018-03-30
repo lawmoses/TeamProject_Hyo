@@ -9,8 +9,8 @@
 
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
 
- <!-- /board/sample.jsp-CSS -->
-<link rel="stylesheet" href="resources/css/hyo-sample-style.css">
+ <!-- 링크 수정 ${pageContext.request.contextPath}/  /board/sample.jsp-CSS -->
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/hyo-sample-style.css">
 
 </head>
 <body>
@@ -20,8 +20,8 @@
 <div class="box1">
 	<div class="site">
 
-<!-- 링크 수정 -->	
-	<h1><a href="#"><img src="resources/images/hyo-img/logo-large.png" alt="TimeSwitch" width="250" height="33"></a></h1>
+<!-- 링크 수정 ${pageContext.request.contextPath}/ -->	
+	<h1><a href="#"><img src="${pageContext.request.contextPath}/resources/images/hyo-img/logo-large.png" alt="TimeSwitch" width="250" height="33"></a></h1>
 	</div>
 </div>
 
@@ -41,8 +41,8 @@
 
 
 <div class="box3">
-<!-- 링크 수정 -->	
-	<img src="resources/images/hyo-img/header.jpg" alt="" class="topimg">
+<!-- 링크 수정 ${pageContext.request.contextPath}/ -->	
+	<img src="${pageContext.request.contextPath}/resources/images/hyo-img/header.jpg" alt="" class="topimg">
 </div>
 
 

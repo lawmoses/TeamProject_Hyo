@@ -10,9 +10,14 @@ http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 <mvc:annotation-driven />
 
+<mvc:default-servlet-handler/>
 
 <mvc:resources mapping="/resources/**" location="/resources/" />
 
+
+<!-- 3/30(금) 장효추가 -->
+<mvc:view-controller path="/index" view-name="index"/>
+<!-- 3/30(금) 장효추가 -->
 
 <bean class="controller.MemberController" />
 <bean class="controller.AppovalController" />

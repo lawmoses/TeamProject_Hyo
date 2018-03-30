@@ -37,6 +37,14 @@ public class BoardController {
 		if (pageNum != null && pageNum != "") this.pageNum = pageNum;
 	}
 	
+	//=======================================================================================	
+	//장효추가
+		@RequestMapping("/sample")
+		public String sample(Model model) {
+			
+			return "board/sample";
+			//return "index";
+		}
 	
 	//=======================================================================================	
 	
@@ -131,7 +139,7 @@ public class BoardController {
 	//수정
 	@RequestMapping("/writeFormUpload1") //이것은 메소드 명과 상관 없다. 뷰단과 꼭 맞춰야한다.
 			//파일을 받아야하므로, 답글일 경우에는 넘,아리스타, 아리레벨을 겟방식으로 보내주기 떄문이다.
-	public ModelAndView writeFormUpload(BoardDataBean article)
+	public ModelAndView writeFormUpload1(BoardDataBean article)
 			throws Exception {
 	
 		ModelAndView mv = new ModelAndView();
