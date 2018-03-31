@@ -155,8 +155,8 @@ public class BoardController {
 		mv.addObject("pageNum", pageNum);
 			//ModelAndView로 바꾸는 방법이다.
 			//뷰단과 꼭 맞춰야한다.
-	//수정
-		mv.setViewName("writeFormUpload1");
+	//수정1 + 수정2 board/
+		mv.setViewName("board/writeFormUpload1");
 		return mv;
 	}
 	
@@ -182,7 +182,7 @@ public class BoardController {
 			//ModelAndView로 바꾸는 방법이다.
 			//뷰단과 꼭 맞춰야한다.
 	//수정
-		mv.setViewName("writeFormUpload2");
+		mv.setViewName("board/writeFormUpload2");
 		return mv;
 		}
 	
@@ -195,8 +195,8 @@ public class BoardController {
 	//기존과 WriteProUploadAction 코드가 완전 다름, 손 볼거 많음
 	//샌드리다이랙트는 스트링으로 받아야함???
 	public String writeProUpload(MultipartHttpServletRequest request,
-								BoardDataBean article, Model model)
-								throws Exception {
+			BoardDataBean article, Model model)
+			throws Exception {
 		//기존과 완전 다름
 		//MultipartRequest 임포트가 다름 
 	//추가
@@ -224,6 +224,7 @@ public class BoardController {
 		model.addAttribute("boardid", boardid);
 	//수정
 		return "redirect:list1";
+		//return "board/list1";
 	}
 	
 	
@@ -279,7 +280,7 @@ public class BoardController {
 	//추가
 			model.addAttribute("boardid", boardid);
 		 
-		return "content";
+		return "board/content";
 	}
 	
 	/*//추가
@@ -309,7 +310,7 @@ public class BoardController {
 	model.addAttribute("article", article);
 	//추가
 	model.addAttribute("boardid", boardid);
-		return "updateForm";
+		return "board/updateForm";
 	}
 	
 	
@@ -336,7 +337,7 @@ public class BoardController {
 	 	model.addAttribute("pageNum", pageNum);	
 	//추가
 	 	model.addAttribute("boardid", boardid);
-		return "updatePro";
+		return "board/updatePro";
 	}
 	
 	/*		//게시글 수정 Pro (2) - 공지게시판
@@ -364,7 +365,7 @@ public class BoardController {
 		mv.addObject("pageNum", pageNum);
 	//추가
 		mv.addObject("boardid", boardid);
-		mv.setViewName("deleteForm");		
+		mv.setViewName("board/deleteForm");		
 		return mv;
 	}
 	
@@ -394,7 +395,7 @@ public class BoardController {
 		mv.addObject("pageNum", pageNum);
 	//추가
 		mv.addObject("boardid", boardid);
-		mv.setViewName("deletePro");
+		mv.setViewName("board/deletePro");
 		return mv;
 	}
 	

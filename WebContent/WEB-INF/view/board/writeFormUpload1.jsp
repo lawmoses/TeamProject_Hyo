@@ -30,7 +30,8 @@
     		<td align="right" colspan="2" >
     		
 <!-- 수정 : ${boardid } -->
-    			<a href="list${boardid}"> <b>글목록</b></a> 
+
+    			<a href="list${boardid}"> <b>글목록</b></a>
    			</td>
    		</tr>
    		<tr>

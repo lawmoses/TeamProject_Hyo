@@ -54,11 +54,11 @@
 			<td align="center" width="50">${number}</td>
 			<c:set var="number" value="${number-1}"/>
 			<td width="250">
-	
+<!-- ¼öÁ¤: ${pageContext.request.contextPath} -->	
 			<c:if test="${article.re_level>0}">
 				<img src="${pageContext.request.contextPath}/resources/images/hyo-board-img/level.gif"
 					width="${5 * article.re_level}" height="16"> 
-				<img src="resources/images/hyo-board-img/re.gif">
+				<img src="${pageContext.request.contextPath}/resources/images/hyo-board-img/re.gif">
 			</c:if> 
 	
 			<c:if test="${article.re_level==0}">
@@ -70,7 +70,7 @@
 					${article.subject}</a> 
 
  			<c:if test="article.readcount>=20">
- 				<img src="resources/images/hyo-board-img/hot.gif" border="0" height="16">
+ 				<img src="${pageContext.request.contextPath}/resources/images/hyo-board-img/hot.gif" border="0" height="16">
 			</c:if>
  			</td>
 			<td align="center" width="100">${article.writer}</td>

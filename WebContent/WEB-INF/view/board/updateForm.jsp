@@ -13,8 +13,9 @@
 <body>
 <div class="w3-container">
 	<center>
-		<b>글수정</b>
-<br>
+		<h4><b>글수정</b></h4>
+	<br/>
+	<br/>
 	<form method="post" name="writeform" action="updatePro" >
 <!-- 수정 : ${article.boardid} -> ${boardid} -->
 		<input  type="hidden"   name="boardid" value="${boardid}">
@@ -26,7 +27,7 @@
 	<table class="w3-table-all"  style="width:70%;" >
    		<tr>
     		<td align="right" colspan="2" >
-	    		<a href="list.jsp"> 글목록</a> 
+	    		<a href="list${boardid}"> 글목록</a> 
    			</td>
    		</tr>
    		<tr>
