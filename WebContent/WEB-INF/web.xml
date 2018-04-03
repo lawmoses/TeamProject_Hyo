@@ -11,8 +11,8 @@
   </welcome-file-list>
  
  
-<!-- 3/30(토) 장효 수정 : 시작-->
-  <!-- <jsp-config>
+
+<jsp-config>
     <jsp-property-group>
       <url-pattern>/WEB-INF/view/approval/*</url-pattern>
       <url-pattern>/WEB-INF/view/board/*</url-pattern>
@@ -21,8 +21,8 @@
       <url-pattern>/WEB-INF/view/orgChart/*</url-pattern>
      <include-prelude>/WEB-INF/view/common/top.jspf</include-prelude>
     </jsp-property-group>
-  </jsp-config> -->
- <!-- 3/30(토) 장효 수정 : 끝-->
+  </jsp-config>
+
   
   
 <servlet>

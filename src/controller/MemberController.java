@@ -34,13 +34,13 @@ public class MemberController{
 
 	
 	@RequestMapping("/main")
-	public String Login(Model model) throws Exception {
+	public String list1(Model model) throws Exception {
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("yy-MM-dd");
 		//SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 	//추가
 		String boardid = "1";
-		int pageSize = 5;
+		int pageSize = 7;
 			//처음에 들어올때는 1번이 뜸 (넘어오는 pageNum이 없기 때문에)
 		int currentPage = Integer.parseInt(pageNum);
 			//db에서 가져올 데이터의 열(currentPage에 노출되는 가장 윗글)
@@ -79,8 +79,13 @@ public class MemberController{
 		model.addAttribute("endPage", endPage);
 		model.addAttribute("number", number);
 		
+		
+		
+		
+		
 		return "board/mainBoard";
 	}
+	
 	
 	
 	
