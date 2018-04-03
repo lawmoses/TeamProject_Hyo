@@ -15,14 +15,16 @@ import dao.BoardDBMybatis;
 //@RequestMapping("/")
 public class MemberController{
 
-//===============> 장효추가
+//===============> 장효추가 start
+	String boardid = "1";
+	String pageNum ="1";
 	BoardDBMybatis dbPro = BoardDBMybatis.getInstance();
 	@ModelAttribute
-	public void addAttributes (String pageNum) {
+	public void addAttributes (String boardid, String pageNum) {
+		if (boardid != null) this.boardid = boardid;
 		if (pageNum != null && pageNum != "") this.pageNum = pageNum;
 	}
-	
-	
+//===============> 장효추가 end
 
 	@RequestMapping("/index")
 	public String index(Model model) {
@@ -82,6 +84,6 @@ public class MemberController{
 	
 	
 	
-
+    
 }
 
