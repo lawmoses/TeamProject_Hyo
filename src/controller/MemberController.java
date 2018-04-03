@@ -78,9 +78,7 @@ public class MemberController{
 		model.addAttribute("bottomLine", bottomLine);
 		model.addAttribute("endPage", endPage);
 		model.addAttribute("number", number);
-		
-		
-		
+	
 		
 		
 		return "board/mainBoard";

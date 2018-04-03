@@ -164,7 +164,7 @@
 	</c:if>
          
     <c:if test="${count!=0}">                      
-        <c:forEach  var="article"  items="${articleList1}">	
+        <c:forEach  var="article"  items="${articleList}">	
 		<tr height="30">
 			<td align="center" width="50">${number}</td>
 			<c:set var="number" value="${number-1}"/>
